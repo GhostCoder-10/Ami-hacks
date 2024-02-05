@@ -1,0 +1,620 @@
+@font-face{
+    font-family: space-crusaders;
+    src: url(./image/space-crusaders-font/SpaceCrusaders-x3DP0.ttf);
+  
+    
+  }
+  .navbar-toggler, .navbar-toggler-icon{
+    background-color: white;
+    color: white;
+  }
+  .nav-link{
+    /* color: white; */
+    font-size: 17px;
+  }
+  
+  .nav-item{
+    padding: 0 40px 0 0;
+  }
+  
+  .navbar-brand{
+    padding-left: 30px;
+  }
+
+  .logo{
+    height: 60px;
+    width: 350px;
+    margin: 10px;
+  }
+
+
+
+  #Home {
+    background-image: url("./image/21078739_6413368.jpg");
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    background-position: center center; /* Center the background image */
+    background-attachment: fixed;
+    min-height: 100vh; /* Set a minimum height to ensure visibility on smaller screens */
+}
+
+.hackathon-title{
+    padding-top: 150px;
+    text-align: center;
+}
+
+/* .Ami-hacks{
+    font-size: 100px;
+    font-family: 'space-crusaders';
+} */
+
+
+.Ami-hacks {
+    font-size: 100px;
+    font-family: 'space-crusaders';
+    opacity: 0; /* Start with 0 opacity */
+    animation: fadeIn 0.5s ease-in-out 1s forwards; /* Apply fade-in animation */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+
+.welcome-text{
+    font-size: 40px;
+}
+
+.date-location{
+    padding: 10px 0 20px 0;
+    opacity: 0; /* Start with 0 opacity */
+    animation: fadeIn 2s ease-in-out 1s forwards; /* Apply fade-in animation */
+}
+
+
+.effect1 {
+    color: #222;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 24px;
+    position: relative;
+    padding: 10px 50px 10px 20px;
+  
+    -webkit-transition: all 0.3s;
+  
+    -o-transition: all 0.3s;
+  
+    transition: all 0.3s;
+  
+    -webkit-transform: scale(3);
+  
+        -ms-transform: scale(3);
+  
+            transform: scale(3); /*change scale(3) to scale(1)*/
+
+
+            opacity: 0; /* Start with 0 opacity */
+    animation: fadeIn 2s ease-in-out 1s forwards; /* Apply fade-in animation */
+  }
+  
+  .effect1 .bg {
+    background: #222;
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -1px;
+    z-index: -1;
+  
+    -webkit-transition: all 0.3s;
+  
+    -o-transition: all 0.3s;
+  
+    transition: all 0.3s;
+  }
+  
+  .effect1:hover {
+    padding-right: 20px;
+    color: #fff;
+  }
+  
+  .effect1:hover .bg {
+    height: 100%;
+    width: 100%;
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+  }
+  
+  .effect1 .bg:before, .effect1 .bg:after {
+    content: '';
+    height: 2px;
+    width: 10px;
+    background: #222;
+    position: absolute;
+    right: -2px;      
+    -webkit-transition: all 0.3s;      
+    -o-transition: all 0.3s;      
+    transition: all 0.3s;
+  }
+  
+  .effect1 .bg:before {
+    bottom: 3px;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .effect1 .bg:after{
+    top: 3px;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  
+  .effect1:hover .bg:before,
+  .effect1:hover .bg:after{
+    right: 0;
+  }
+  
+  .effect1:hover .bg:before{
+    bottom: 6px;
+  }
+  
+  .effect1:hover .bg:after{
+    top: 6px;
+  }
+
+
+  #About{
+    padding: 50px 0 50px 0;
+    height: 100vh;
+    background-color: #c2fff8;
+    text-align: center;
+  }
+
+.about-ami-hacks{
+    text-align: justify;
+  max-width: 800px; /* Optional: Set a maximum width for better readability */
+  margin: 0 auto; /* Center the content */
+}
+
+.Heading{
+    padding: 50px 0 60px 0;
+    text-align: center;
+}
+
+
+
+
+.container {
+    display: flex;
+    height: 80vh;
+  }
+  
+  .section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    transition: flex .4s ease;
+    position: relative;
+  }
+  
+  .section .overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: background-color .8s ease;
+  }
+  
+  .section .content {
+    z-index: 2;
+  }
+  
+  .section:hover {
+    flex: 2;
+  }
+  
+  .section:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.95);
+  }
+  
+  #marketing {
+    background-image: url('./image/AI-theme.jpg');
+  }
+  
+  
+  #technology {
+    background-image: url('./image/blockchain-theme.jpg');
+  }
+  
+  #advertising {
+    background-image: url('./image/IoT-theme.jpg');
+  }
+
+#Rules{
+    padding: 100px 0 100px 0;
+}
+
+  .rules-list{
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: justify;
+    margin: 0;
+  }
+  
+  .rule{
+    padding-top: 25px;
+    font-size: 18px;
+  }
+
+
+  
+.guidance{
+    font-size: 25px;
+    padding-left: 120px;
+  }
+  
+  .guidance-list{
+    padding: 25px;
+  }
+  
+  
+  .card{
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  padding: 14px 80px 18px 36px;
+  cursor: pointer;
+  }
+  
+  .card:hover{
+     transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+  }
+  
+  .card h3{
+    font-weight: 500;
+    font-size: 25px;
+  }
+  
+  .card img{
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  max-height: 120px;
+  }
+  
+  .card-1{
+  background-image: url(./CyberCup3.0/united_1534938.png);
+      background-repeat: no-repeat;
+    background-position: right;
+    background-size: 80px;
+  }
+  
+  .card-2{
+   background-image: url(./CyberCup3.0/document_10567039.png);
+      background-repeat: no-repeat;
+    background-position: right;
+    background-size: 80px;
+  }
+  
+  .card-3{
+   background-image: url(./CyberCup3.0/skills_10231540.png);
+      background-repeat: no-repeat;
+    background-position: right;
+    background-size: 80px;
+  }
+  
+  .card-4{
+    background-image: url(./CyberCup3.0/trophy_1344748.png);
+       background-repeat: no-repeat;
+     background-position: right;
+     background-size: 80px;
+   }
+  
+   .card-5{
+    background-image: url(./CyberCup3.0/trophy_1344748.png);
+       background-repeat: no-repeat;
+     background-position: right;
+     background-size: 80px;
+   }
+   .card-6{
+    background-image: url(./CyberCup3.0/trophy_1344748.png);
+       background-repeat: no-repeat;
+     background-position: right;
+     background-size: 80px;
+   }
+  
+   .card-7{
+    background-image: url(./CyberCup3.0/certificate_2490354.png);
+       background-repeat: no-repeat;
+     background-position: right;
+     background-size: 80px;
+   }
+  
+   .card-8{
+    background-image: url(./CyberCup3.0/map_1865269.png);
+       background-repeat: no-repeat;
+     background-position: right;
+     background-size: 80px;
+   }
+  
+   .card-9{
+    background-image: url(./CyberCup3.0/time_3395472.png);
+       background-repeat: no-repeat;
+     background-position: right;
+     background-size: 80px;
+   }
+  
+  
+  .row{
+    padding: 100px 15px 30px 15px;
+  }
+  
+  .col-md-6, .col-lg-4{
+    padding: 25px;
+  }
+  
+  @media(max-width: 990px){
+  .card{
+    margin: 20px;
+  }
+  } 
+
+
+  @import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap");
+
+.organizing-head {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-gap: 50px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+  font-family: 'Baloo Paaji 2', cursive;
+}
+
+.team-card {
+  background-color: #222831;
+  height: 37rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+.team-card__name {
+  margin-top: 15px;
+  font-size: 1.5em;
+}
+
+.team-card__image {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  border: 5px solid #272133;
+  margin-top: 20px;
+  box-shadow: 0 10px 50px rgba(235, 25, 110, 1);
+}
+
+
+.draw-border {
+  box-shadow: inset 0 0 0 4px #58cdd1;
+  color: #58afd1;
+  -webkit-transition: color 0.25s 0.0833333333s;
+  transition: color 0.25s 0.0833333333s;
+  position: relative;
+}
+
+.draw-border::before,
+.draw-border::after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  width: 0rem;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.draw-border::before {
+  border-bottom-width: 4px;
+  border-left-width: 4px;
+}
+
+.draw-border::after {
+  border-top-width: 4px;
+  border-right-width: 4px;
+}
+
+.draw-border:hover {
+  color: #ffe593;
+}
+
+.draw-border:hover::before,
+.draw-border:hover::after {
+  border-color: #eb196e;
+  -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+
+.draw-border:hover::before {
+  -webkit-transition-delay: 0s, 0s, 0.25s;
+  transition-delay: 0s, 0s, 0.25s;
+}
+
+.draw-border:hover::after {
+  -webkit-transition-delay: 0s, 0.25s, 0s;
+  transition-delay: 0s, 0.25s, 0s;
+}
+
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 700 1.2rem 'Roboto Slab', sans-serif;
+  padding: 0.75em 2em;
+  letter-spacing: 0.05rem;
+  margin: 1em;
+  width: 13rem;
+}
+
+.btn:focus {
+  outline: 2px dotted #55d7dc;
+}
+
+
+.social-icons {
+  padding: 0;
+  list-style: none;
+  margin: 1em;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin: 0.15em;
+  position: relative;
+  font-size: 1em;
+}
+
+.social-icons i {
+  color: #fff;
+  position: absolute;
+  top: 0.95em;
+  left: 0.96em;
+  transition: all 265ms ease-out;
+}
+
+.social-icons a {
+  display: inline-block;
+}
+
+.social-icons a:before {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  content: " ";
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  display: block;
+  background: linear-gradient(45deg, #ff003c, #c648c8);
+  transition: all 265ms ease-out;
+}
+
+.social-icons a:hover:before {
+  transform: scale(0);
+  transition: all 265ms ease-in;
+}
+
+.social-icons a:hover i {
+  transform: scale(2.2);
+  -ms-transform: scale(2.2);
+  -webkit-transform: scale(2.2);
+  color: #ff003c;
+  background: -webkit-linear-gradient(45deg, #ff003c, #c648c8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 265ms ease-in;
+}
+
+.grid-container {
+  text-align: center;
+}
+
+
+.faq-container {
+    max-width: 60%;
+    margin: 0 auto;
+    margin-bottom: 100PX;
+    border-radius: 10px;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
+  
+  .faq {
+    box-sizing: border-box;
+    background: transparent;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .faq:not(:first-child) {
+    border-top: 1px solid #e6e6e6;
+  }
+  
+  .faq-title {
+    margin: 0 35px 0 0;
+  }
+  
+  .faq-text {
+    margin: 30px 0 0;
+    display: none;
+    line-height: 1.5rem;
+  }
+  
+  .faq.active {
+    background-color: #f8f8f8;
+    box-shadow: inset 4px 0px 0px 0px var(--accent-color);
+  }
+  
+  .faq.active .faq-title {
+    color: var(--accent-color);
+  }
+  
+  .faq.active .faq-text {
+    display: block;
+  }
+  
+  .faq-toggle {
+    background-color: transparent;
+    border: 1px solid #e6e6e6;
+    color: inherit;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding-top: 3px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    height: 30px;
+    width: 30px;
+    transition: 0.3s ease;
+  }
+  
+  .faq-toggle:focus {
+    outline: none;
+  }
+  
+  .faq.active .faq-toggle {
+    transform: rotate(180deg);
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: #fff;
+  }
